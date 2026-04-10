@@ -31,3 +31,80 @@ smartwatch
 | C* | Condensatoare 100nF | Decuplare | 0201 | multiple | - |
 | C* | Condensatoare >100nF | Bulk | 0402 | multiple | - |
 | R* | Rezistențe | Diverse valori | 0201 | multiple | - |
+
+
+## Descrierea funcționalității hardware
+
+### Microcontroller — nRF52840
+
+Inima dispozitivului este **Nordic nRF52840**, un SoC (System on Chip) cu procesor ARM Cortex-M4 la 64 MHz, cu unitate FPU, 1 MB Flash, 256 KB RAM și radio Bluetooth 5.0 integrat. Chipul operează la 3.3V și gestionează toate perifericele prin interfețele SPI, I2C și GPIO.
+
+### Alimentare
+
+Lanțul de alimentare funcționează astfel:
+- **USB-C (KH-TYPE-C-16P)** furnizează VBUS (5V) prin conectorul de încărcare
+- **USBLC6-2SC6Y** protejează liniile D+/D- împotriva descărcărilor electrostatice (ESD)
+- **BQ25180YBGR** este charger-ul LiPo care încarcă bateria de 3.7V și comunică cu MCU-ul prin I2C pentru a raporta starea încărcării. Curentul maxim de încărcare este de 350mA.
+- **MAX17048G+T10** este fuel gauge-ul care măsoară tensiunea bateriei și estimează starea de încărcare (SoC) prin algoritmul ModelGauge, comunicând prin I2C. Generează o întrerupere ALERT când bateria scade sub un prag configurat.
+- **RT6160AWSC** este un convertor DC/DC boost care generează tensiunea de 3.3V necesară MCU-ului și perifericelor din tensiunea bateriei. Frecvența de comutare este de 1.5MHz, folosind inductanța L7 de 10µH.
+
+### Display E-Paper
+
+Display-ul e-paper se conectează prin conectorul FFC **503480-2400** (24 pini). Interfața de comunicație este **SPI** (MOSI, SCK) împreună cu semnale de control GPIO:
+- **EPD_CS** — chip select
+- **EPD_DC** — selectare mod Data/Command
+- **EPD_RST** — reset display
+- **EPD_BUSY** — semnal de ocupat (MCU-ul așteaptă să devină LOW înainte de a trimite date noi)
+
+Circuitul de drive al display-ului conține diode Schottky MBR0530, MOSFET-uri și inductanța L5 (68µH) pentru generarea tensiunilor ridicate necesare panoului e-paper (PREVGH pozitiv, PREVGL negativ). Marele avantaj al display-ului e-paper este consumul zero în standby — imaginea rămâne afișată fără alimentare (display bistabil).
+
+### IMU — BMA421
+
+Senzorul de mișcare **BMA421** de la Bosch este un accelerometru 3-axis cu consum ultra-redus, folosit pentru:
+- Detectarea pașilor (pedometru integrat în hardware)
+- Recunoașterea activității (mers, alergat, stat)
+- Detectarea orientării dispozitivului
+- Wake-up la mișcare (trezirea MCU-ului din sleep)
+
+Comunică cu MCU-ul prin **I2C** la adresa 0x18 sau 0x19 (selectabilă prin pinul SDO). Generează întreruperi pe liniile **INT1** și **INT2** pentru a trezi MCU-ul la detectarea unor evenimente, fără a consuma energie în modul standby. Tensiunea de alimentare este 3.3V (VDDIO și VDD).
+
+### Driver Haptic — DRV2605YZFR
+
+**DRV2605YZFR** de la Texas Instruments este un driver pentru actuatoare haptice (LRA/ERM) cu bibliotecă internă de 123 de efecte de vibrație stocate în ROM. Comunică prin **I2C** la adresa 0x5A și este activat de MCU prin semnalul **HAPTIC_EN** (GPIO). Oferă feedback tactil utilizatorului la interacțiunile cu interfața (notificări, confirmare butoane etc.).
+
+### Conectivitate BLE
+
+Radio-ul BLE integrat în nRF52840 operează la 2.4GHz și suportă Bluetooth 5.0 cu rate de date de 1Mbps (LE 1M PHY) și 2Mbps (LE 2M PHY). Este conectat la antena **2450AT18B100E** de la Johanson Technology printr-o rețea de matching RF compusă din L2 (15nH), L3 (3.9nH) și condensatoare de 1pF. Antena este plasată la exteriorul PCB-ului, iar zona de sub antenă este decupată complet (fără cupru și fără trasee) pentru a nu degrada performanța RF.
+
+### Butoane
+
+Trei butoane tactile **EVP-AKE31A** de la Panasonic (SW_UP, SW_DN, SW_ENT) sunt conectate la GPIO-urile MCU-ului cu rezistențe de pull-up de 10kΩ. La apăsare, pinul GPIO este tras la GND. Butoanele sunt plasate pe marginea PCB-ului, aliniate cu orificiile fizice din carcasă.
+
+### Debug SWD
+
+Interfața de programare și depanare **SWD** este expusă prin conectorul **TC2030-IDC** (Tag-Connect 6-pin, fără găuri). Semnalele disponibile sunt SWDIO, SWDCLK, SWO (trace), RESET, 3.3V și GND. Toate sunt marcate pe silkscreen cu test pad-uri dedicate.
+
+### Oscilatoare
+
+- **Crystal 32 MHz** — oscilator principal pentru MCU și radio BLE, cu condensatoare de sarcină de 12pF. Conectat pe pinii dedicați P0.00/XL1 și P0.01/XL2.
+- **Crystal 32.768 kHz** — oscilator pentru RTC (Real Time Clock), cu condensatoare de 12pF. Conectat pe pinii dedicați XC1 și XC2. Permite timekeeping precis în modul low power.
+
+---
+
+## Calcul consum de energie
+
+| Componentă | Curent tipic | Mod |
+|-----------|-------------|-----|
+| nRF52840 | 4.8 mA | Activ CPU |
+| nRF52840 | 0.4 µA | Deep sleep |
+| nRF52840 | 5.3 mA | BLE advertising |
+| BMA421 | 150 µA | Normal |
+| BMA421 | 2 µA | Low power |
+| DRV2605 | 9 mA | Activ |
+| DRV2605 | 40 µA | Standby |
+| MAX17048 | 23 µA | Activ |
+| RT6160AWSC | ~50 µA | Quiescent |
+| Display e-paper | ~26 mA | Refresh |
+| Display e-paper | 0 mA | Standby (bistabil) |
+
+**Estimare autonomie:** Cu o baterie LiPo de 200mAh, în modul normal de utilizare (MCU în sleep majoritatea timpului, refresh display de câteva ori pe zi, BLE advertising periodic), curentul mediu estimat este de aproximativ 1-2mA, rezultând o autonomie de **4-8 zile**.
