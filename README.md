@@ -1,3 +1,6 @@
 # temaTSC
 smartwatch
 <img width="1110" height="1012" alt="image" src="https://github.com/user-attachments/assets/9024962a-e35f-4613-b769-74186d94089c" />
+
+BOM (Bill of Materials)
+ReferințăComponentăValoare/DescrierePackageCantitateLink JLCDatasheetU1nRF52840MCU + BLE 5.0QFN-941JLCDatasheetIC1BQ25180YBGRLiPo ChargerBGA-81JLCDatasheetIC2DRV2605YZFRHaptic DriverDSBGA-121JLCDatasheetIC3BMA421IMU (Accelerometru)LGA-121JLCDatasheetIC9RT6160AWSCDC/DC ConverterWLCSP1JLCDatasheetU3MAX17048G+T10Fuel GaugeSOT-23-61JLCDatasheetD3USBLC6-2SC6YESD Protection USBSOT-3631JLCDatasheetJ4KH-TYPE-C-16PUSB-C ConnectorSMD1JLCDatasheetJ1503480-2400E-Paper ConnectorFFC 24-pin1JLCDatasheetANT12450AT18B100EAntenă BLE 2.4GHzSMD1JLCDatasheetX1Crystal 32MHzOscilator principalSMD 20161JLC-X2Crystal 32.768kHzRTC clockSMD 20161JLC-SW1-3EVP-AKE31AButon tactil SMDSMD3JLCDatasheetJ2TC2030-IDCSWD Debug ConnectorSMD1JLCDatasheetQ2DMG2305UX-7MOSFET P-chSOT-231JLCDatasheetQ3SI1308EDL-T1-GE3MOSFET N-chSC-701JLCDatasheetD2,D4,D5MBR0530Diodă SchottkySOD-1233JLCDatasheetL1FTC252012SR47MBCAInductanță 0.47µH25201JLC-L2Inductanță 15nHRF matching02011JLC-L3Inductanță 3.9nHRF matching02011JLC-L5Inductanță 68µHEPD driverSMD1JLC-L7Inductanță 10µHDC/DCSMD1JLC-C*Condensatoare 100nFDecuplare0201multipleJLC-C*Condensatoare >100nFBulk0402multipleJLC-R*RezistențeDiverse valori0201multipleJLC-
