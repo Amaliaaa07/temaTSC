@@ -108,3 +108,77 @@ Interfața de programare și depanare **SWD** este expusă prin conectorul **TC2
 | Display e-paper | 0 mA | Standby (bistabil) |
 
 **Estimare autonomie:** Cu o baterie LiPo de 200mAh, în modul normal de utilizare (MCU în sleep majoritatea timpului, refresh display de câteva ori pe zi, BLE advertising periodic), curentul mediu estimat este de aproximativ 1-2mA, rezultând o autonomie de **4-8 zile**.
+
+
+## Pinii nRF52840 utilizați
+
+| Pin nRF52840 | Semnal | Componentă | Interfață | Motiv |
+|-------------|--------|-----------|-----------|-------|
+| P0.00/XL1 | XL1 | Crystal 32MHz | XTAL | Pin dedicat oscilator principal |
+| P0.01/XL2 | XL2 | Crystal 32MHz | XTAL | Pin dedicat oscilator principal |
+| XC1, XC2 | - | Crystal 32.768kHz | XTAL | Pini RTC dedicați |
+| P0.04 | EPD_CS | E-Paper | SPI CS | Chip select display |
+| P0.05 | EPD_DC | E-Paper | GPIO | Data/Command select |
+| P0.06 | MOSI | E-Paper | SPI | Date SPI |
+| P0.07 | SCK | E-Paper | SPI | Clock SPI |
+| P0.08 | EPD_RST | E-Paper | GPIO | Reset display |
+| P0.09 | EPD_BUSY | E-Paper | GPIO | Busy signal display |
+| P0.13 | D- | USB-C | USB | Linie date USB |
+| P0.14 | D+ | USB-C | USB | Linie date USB |
+| P0.25 | SDA | I2C bus | I2C | Date I2C (IMU, Haptic, Charger, FuelGauge) |
+| P0.26 | SCL | I2C bus | I2C | Clock I2C |
+| P0.27 | PMIC_INT | BQ25180 | GPIO | Întrerupere charger |
+| P0.28 | ALERT | MAX17048 | GPIO | Alertă fuel gauge |
+| P1.01 | HAPTIC_EN | DRV2605 | GPIO | Enable driver haptic |
+| P1.02 | IMU_INT1 | BMA421 | GPIO | Întrerupere IMU 1 |
+| P1.03 | IMU_INT2 | BMA421 | GPIO | Întrerupere IMU 2 |
+| P1.04 | SW_UP | Buton UP | GPIO | Buton sus |
+| P1.05 | SW_DN | Buton DOWN | GPIO | Buton jos |
+| P1.06 | SW_ENT | Buton ENTER | GPIO | Buton enter |
+| P0.18/RESET | RESET | SWD | SWD | Reset MCU |
+| SWDCLK | SWDCLK | TC2030-IDC | SWD | Clock debug |
+| SWDIO | SWDIO | TC2030-IDC | SWD | Date debug |
+| P0.22 | SWO | TC2030-IDC | SWD | Trace output |
+| ANT | RF | Antenă BLE | RF | Pin antenă dedicat |
+| VBUS | VBUS | USB-C | Power | Detecție VBUS |
+
+---
+
+## Design log
+
+### Probleme întâmpinate și decizii luate
+
+**Erori Drill Size (72) — Aprobate**
+Via-urile au fost rutate cu drill de 0.2mm. Deși s-a încercat ajustarea annular ring-ului la 0.075mm (outer și inner) în Layer Stack, erorile au persistat din cauza constrângerilor de spațiu din zonele aglomerate ale PCB-ului (în special zona BGA a nRF52840). Erorile au fost aprobate manual deoarece dimensiunile sunt în limitele acceptabile pentru fabricanți moderni de PCB și nu afectează funcționalitatea electrică.
+
+**Erori Overlap (12) — Aprobate**
+Cele 12 erori de overlap sunt de două tipuri:
+- **Smd-Via Overlap (6)**: Via-uri plasate foarte aproape de pad-urile SMD în zone aglomerate. Acestea sunt necesare pentru rutarea semnalelor și nu pot fi mutate fără a compromite rutarea generală.
+- **Pad-Solid Polygon Shape Overlap (6)**: Pad-uri care se suprapun cu planul de masă (polygon fill). Acestea sunt intentionate — pad-urile sunt conectate la planul de masă prin thermal reliefs și suprapunerea este normală în acest context.
+
+**Erori Copper Clearance (26) — Aprobate**
+Cele 26 erori de clearance sunt de tipul Wire-Wire și Smd-Wire pe layer-ul Top, cauzate de densitatea mare a componentelor și a traseelor în zona centrală a PCB-ului. Distanțele sunt ușor sub limita impusă de regulile DRC, însă se află în limitele de fabricație ale producătorilor standard de PCB (clearance minim 0.1mm). Erorile au fost aprobate deoarece nu există risc de scurtcircuit în condiții normale de fabricație.
+
+**Antena BLE**
+Zona de sub antena 2450AT18B100E a fost decupată din PCB și exclusă complet din planul de masă, conform specificațiilor din datasheet-ul antenei. Nu se rutează niciun semnal pe sub antenă.
+
+**Eroarea "Only INPUT pins on NET ID"**
+Ignorată conform specificațiilor proiectului.
+
+**Erorile de Dimension**
+Erorile cauzate de amplasarea celor trei butoane și a mufei USB-C sunt neglijate conform specificațiilor proiectului.
+
+**Modelele 3D**
+Componentele mici (rezistențe 0201, condensatoare 0201/0402) nu au modele 3D individuale asociate și folosesc modelul generic din Fusion 360. Componentele principale (nRF52840, BQ25180, conectorul USB-C, butoanele, cristalele) au modele 3D reale asociate.
+
+---
+
+## Imagini
+
+Randările PCB-ului și ale dispozitivului complet se găsesc în folderul `/Images`.
+
+---
+
+## Licență
+
+Acest proiect este licențiat sub licența **Apache 2.0**. Vezi fișierul [LICENSE](LICENSE) pentru detalii.
