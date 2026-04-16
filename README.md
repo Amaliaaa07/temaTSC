@@ -15,7 +15,7 @@ smartwatch
 | D3 | USBLC6-2SC6Y | ESD Protection USB | SOT-363 | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/SGST/SGSTS35924/SGSTS35924-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
 | J4 | KH-TYPE-C-16P | USB-C Connector | SMD | 1 | [Datasheet](https://www.snapeda.com/parts/KH-TYPE-C-16P/kinghelm/datasheet/) |
 | J1 | 503480-2400 | E-Paper Connector | FFC 24-pin | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/MOLE/MOLE-S-A0003522481/MOLE-S-A0010982248-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| ANT1 | 2450AT18B100E | Antenă BLE 2.4GHz | SMD | 1 | [Datasheet]((https://www.johansontechnology.com/docs/1187/2450AT18B100_X8XXogU.pdf)) |
+| ANT1 | 2450AT18B100E | Antenă BLE 2.4GHz | SMD | 1 | [Datasheet](https://www.johansontechnology.com/docs/1187/2450AT18B100_X8XXogU.pdf) |
 | X1 | Crystal 32MHz | Oscilator principal | SMD 2016 | 1 | - |
 | X2 | Crystal 32.768kHz | RTC clock | SMD 2016 | 1 | - |
 | SW1-3 | EVP-AKE31A | Buton tactil SMD | SMD | 3 | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf) |
