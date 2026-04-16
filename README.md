@@ -4,34 +4,33 @@ smartwatch
 
 ## BOM (Bill of Materials)
 
-| Referință | Componentă | Valoare/Descriere | Package | Cantitate | Datasheet |
-|-----------|-----------|-------------------|---------|-----------|-----------|
-| U1 | nRF52840 | MCU + BLE 5.0 | QFN-94 | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/NRSA/NRSA-S-A0021008244/NRSA-S-A0021008244-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| IC1 | BQ25180YBGR | LiPo Charger | BGA-8 | 1 | [Datasheet](https://www.ti.com/lit/ds/symlink/bq25180.pdf) |
-| IC2 | DRV2605YZFR | Haptic Driver | DSBGA-12 | 1 | [Datasheet](https://www.ti.com/lit/ds/symlink/drv2605.pdf) |
-| IC3 | BMA421 | IMU (Accelerometru) | LGA-12 | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/BSCH/BSCH-S-A0007921771/BSCH-S-A0010021471-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| IC9 | RT6160AWSC | DC/DC Converter | WLCSP | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/RHTK/RHTK-S-A0025617216/RHTK-S-A0025617221-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| U3 | MAX17048G+T10 | Fuel Gauge | SOT-23-6 | 1 | [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf?ADICID=SYND_WW_P682800_PF-spglobal) |
-| D3 | USBLC6-2SC6Y | ESD Protection USB | SOT-363 | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/SGST/SGSTS35924/SGSTS35924-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| J4 | KH-TYPE-C-16P | USB-C Connector | SMD | 1 | [Datasheet](https://www.snapeda.com/parts/KH-TYPE-C-16P/kinghelm/datasheet/) |
-| J1 | 503480-2400 | E-Paper Connector | FFC 24-pin | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/MOLE/MOLE-S-A0003522481/MOLE-S-A0010982248-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| ANT1 | 2450AT18B100E | Antenă BLE 2.4GHz | SMD | 1 | [Datasheet](https://www.johansontechnology.com/docs/1187/2450AT18B100_X8XXogU.pdf) |
-| X1 | Crystal 32MHz | Oscilator principal | SMD 2016 | 1 | - |
-| X2 | Crystal 32.768kHz | RTC clock | SMD 2016 | 1 | - |
-| SW1-3 | EVP-AKE31A | Buton tactil SMD | SMD | 3 | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C434.pdf) |
-| J2 | TC2030-IDC | SWD Debug Connector | SMD | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/TGCN/TGCN-S-A0008988129/TGCN-S-A0008988129-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
-| Q2 | DMG2305UX-7 | MOSFET P-ch | SOT-23 | 1 | [Datasheet](https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf) |
-| Q3 | SI1308EDL-T1-GE3 | MOSFET N-ch | SC-70 | 1 | [Datasheet](https://www.vishay.com/docs/68252/si1308edl.pdf) |
-| D2,D4,D5 | MBR0530 | Diodă Schottky | SOD-123 | 3 | [Datasheet](https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf) |
-| L1 | FTC252012SR47MBCA | Inductanță 0.47µH | 2520 | 1 | - |
-| L2 | Inductanță 15nH | RF matching | 0201 | 1 | - |
-| L3 | Inductanță 3.9nH | RF matching | 0201 | 1 | - |
-| L5 | Inductanță 68µH | EPD driver | SMD | 1 | - |
-| L7 | Inductanță 10µH | DC/DC | SMD | 1 | - |
-| C* | Condensatoare 100nF | Decuplare | 0201 | multiple | - |
-| C* | Condensatoare >100nF | Bulk | 0402 | multiple | - |
-| R* | Rezistențe | Diverse valori | 0201 | multiple | - |
-
+| Referință | Componentă | Valoare/Descriere | Package | Cantitate | Link JLC | Datasheet |
+|-----------|-----------|-------------------|---------|-----------|----------|-----------|
+| U1 | nRF52840 | MCU + BLE 5.0 | QFN-94 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=nRF52840) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/NRSA/NRSA-S-A0021008244/NRSA-S-A0021008244-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
+| IC1 | BQ25180YBGR | LiPo Charger | BGA-8 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=BQ25180YBGR) | [Datasheet](https://www.ti.com/lit/ds/symlink/bq25180.pdf) |
+| IC2 | DRV2605YZFR | Haptic Driver | DSBGA-12 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=DRV2605YZFR) | [Datasheet](https://www.ti.com/lit/ds/symlink/drv2605.pdf) |
+| IC3 | BMA421 | IMU (Accelerometru) | LGA-12 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=BMA421) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/BSCH/BSCH-S-A0007921771/BSCH-S-A0010021471-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
+| IC9 | RT6160AWSC | DC/DC Converter | WLCSP | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=RT6160AWSC) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/RHTK/RHTK-S-A0025617216/RHTK-S-A0025617221-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
+| U3 | MAX17048G+T10 | Fuel Gauge | SOT-23-6 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=MAX17048) | [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf?ADICID=SYND_WW_P682800_PF-spglobal) |
+| D3 | USBLC6-2SC6Y | ESD Protection USB | SOT-363 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=USBLC6-2SC6Y) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/SGST/SGSTS35924/SGSTS35924-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
+| J4 | KH-TYPE-C-16P | USB-C Connector | SMD | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=KH-TYPE-C-16P) | [Datasheet](https://www.snapeda.com/parts/KH-TYPE-C-16P/kinghelm/datasheet/) |
+| J1 | 503480-2400 | E-Paper Connector | FFC 24-pin | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=503480-2400) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/MOLE/MOLE-S-A0003522481/MOLE-S-A0010982248-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
+| ANT1 | 2450AT18B100E | Antenă BLE 2.4GHz | SMD | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=2450AT18B100E) | [Datasheet](https://www.johansontechnology.com/docs/1187/2450AT18B100_X8XXogU.pdf) |
+| X1 | Crystal 32MHz | Oscilator principal | SMD 2016 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=32MHz+crystal+2016) | - |
+| X2 | Crystal 32.768kHz | RTC clock | SMD 2016 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=32.768kHz+crystal) | - |
+| SW1-3 | EVP-AKE31A | Buton tactil SMD | SMD | 3 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=EVP-AKE31A) | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C434.pdf) |
+| J2 | TC2030-IDC | SWD Debug Connector | SMD | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=TC2030-IDC) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/TGCN/TGCN-S-A0008988129/TGCN-S-A0008988129-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
+| Q2 | DMG2305UX-7 | MOSFET P-ch | SOT-23 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=DMG2305UX) | [Datasheet](https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf) |
+| Q3 | SI1308EDL-T1-GE3 | MOSFET N-ch | SC-70 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=SI1308EDL) | [Datasheet](https://www.vishay.com/docs/68252/si1308edl.pdf) |
+| D2,D4,D5 | MBR0530 | Diodă Schottky | SOD-123 | 3 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=MBR0530) | [Datasheet](https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf) |
+| L1 | FTC252012SR47MBCA | Inductanță 0.47µH | 2520 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=FTC252012SR47) | - |
+| L2 | Inductanță 15nH | RF matching | 0201 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=15nH+0201) | - |
+| L3 | Inductanță 3.9nH | RF matching | 0201 | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=3.9nH+0201) | - |
+| L5 | Inductanță 68µH | EPD driver | SMD | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=68uH+inductor) | - |
+| L7 | Inductanță 10µH | DC/DC | SMD | 1 | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=10uH+inductor) | - |
+| C* | Condensatoare 100nF | Decuplare | 0201 | multiple | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=100nF+0201) | - |
+| C* | Condensatoare >100nF | Bulk | 0402 | multiple | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=4.7uF+0402) | - |
+| R* | Rezistențe | Diverse valori | 0201 | multiple | [JLC](https://jlcpcb.com/parts/componentSearch?searchTxt=resistor+0201) | - |
 
 ## Descrierea funcționalității hardware
 
