@@ -18,7 +18,7 @@ smartwatch
 | ANT1 | 2450AT18B100E | Antenă BLE 2.4GHz | SMD | 1 | [Datasheet](https://www.johansontechnology.com/docs/1187/2450AT18B100_X8XXogU.pdf) |
 | X1 | Crystal 32MHz | Oscilator principal | SMD 2016 | 1 | - |
 | X2 | Crystal 32.768kHz | RTC clock | SMD 2016 | 1 | - |
-| SW1-3 | EVP-AKE31A | Buton tactil SMD | SMD | 3 | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf) |
+| SW1-3 | EVP-AKE31A | Buton tactil SMD | SMD | 3 | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C434.pdf) |
 | J2 | TC2030-IDC | SWD Debug Connector | SMD | 1 | [Datasheet](https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-IDC_1.pdf) |
 | Q2 | DMG2305UX-7 | MOSFET P-ch | SOT-23 | 1 | [Datasheet](https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf) |
 | Q3 | SI1308EDL-T1-GE3 | MOSFET N-ch | SC-70 | 1 | [Datasheet](https://www.vishay.com/docs/68252/si1308edl.pdf) |
