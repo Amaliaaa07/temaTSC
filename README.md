@@ -19,7 +19,7 @@ smartwatch
 | X1 | Crystal 32MHz | Oscilator principal | SMD 2016 | 1 | - |
 | X2 | Crystal 32.768kHz | RTC clock | SMD 2016 | 1 | - |
 | SW1-3 | EVP-AKE31A | Buton tactil SMD | SMD | 3 | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C434.pdf) |
-| J2 | TC2030-IDC | SWD Debug Connector | SMD | 1 | [Datasheet](https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-IDC_1.pdf) |
+| J2 | TC2030-IDC | SWD Debug Connector | SMD | 1 | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/TGCN/TGCN-S-A0008988129/TGCN-S-A0008988129-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054) |
 | Q2 | DMG2305UX-7 | MOSFET P-ch | SOT-23 | 1 | [Datasheet](https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf) |
 | Q3 | SI1308EDL-T1-GE3 | MOSFET N-ch | SC-70 | 1 | [Datasheet](https://www.vishay.com/docs/68252/si1308edl.pdf) |
 | D2,D4,D5 | MBR0530 | Diodă Schottky | SOD-123 | 3 | [Datasheet](https://www.onsemi.com/pdf/datasheet/mbr0530t1-d.pdf) |
