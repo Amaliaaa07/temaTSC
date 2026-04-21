@@ -5,7 +5,7 @@ smartwatch
 ## BOM (Bill of Materials)
 
 | Referință | Componentă | Descriere | Cantitate | Link JLC | Datasheet |
-|-----------|-----------|-------------------|---------|-----------|----------|-----------|
+|-----------|-----------|-------------------|-----------|----------|-----------|
 | U1          | MCU             | nRF52840               | 1         | [JLC](https://jlcpcb.com/partdetail/NordicSemiconductor-nRF52840_QIAA/C190794) | [Datasheet](https://4donline.ihs.com/images/VipMasterIC/IC/NRSA/NRSA-S-A0021008244/NRSA-S-A0021008244-1.pdf?hkey=61A2E4C270F0397D049F8F05BD4F1054)  |
 | IC1         | LiPo Charger    | BQ25180YBGR            | 1         | [JLC](https://componentsearchengine.com/prices/BQ25180YBGR?manufacturer=Texas%20Instruments)     | [Datasheet](https://www.ti.com/lit/ds/symlink/bq25180.pdf)                                                     |
 | IC2         | Haptic Driver   | DRV2605YZFR            | 1         | [JLC](https://componentsearchengine.com/prices/DRV2605YZFR?manufacturer=Texas%20Instruments)     | [Datasheet](https://www.ti.com/lit/ds/symlink/drv2605.pdf)                                                     |
