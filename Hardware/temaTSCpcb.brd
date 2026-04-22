@@ -226,16 +226,22 @@
 </layers>
 <board>
 <plain>
-<wire x1="45.1031375" y1="62.47223125" x2="42.5031375" y2="62.47223125" width="0.1524" layer="20"/>
+<wire x1="45.152459375" y1="62.48065" x2="42.5031375" y2="62.47223125" width="0.1524" layer="20"/>
 <wire x1="37.7031375" y1="62.47223125" x2="31.5031375" y2="62.47223125" width="0.1524" layer="20"/>
 <wire x1="26.7031375" y1="62.47223125" x2="20.5031375" y2="62.47223125" width="0.1524" layer="20"/>
 <wire x1="15.7031375" y1="62.47223125" x2="13.1031375" y2="62.47223125" width="0.1524" layer="20"/>
 <wire x1="13.1031375" y1="97.47223125" x2="45.1031375" y2="97.47223125" width="0.1524" layer="20"/>
-<wire x1="52.1031375" y1="69.47223125" x2="52.1031375" y2="90.47223125" width="0.1524" layer="20"/>
+<wire x1="52.173528125" y1="69.43849375" x2="52.173909375" y2="69.51706875" width="0.1524" layer="20"/>
+<wire x1="52.173909375" y1="69.51706875" x2="52.173909375" y2="76.9458875" width="0.1524" layer="20"/>
+<wire x1="52.173909375" y1="76.9458875" x2="49.74425625" y2="76.85889375" width="0.1524" layer="20"/>
+<wire x1="49.74425625" y1="76.85889375" x2="49.767275" y2="79.70025625" width="0.1524" layer="20"/>
+<wire x1="49.767275" y1="79.70025625" x2="52.245609375" y2="79.70025625" width="0.1524" layer="20"/>
+<wire x1="52.245609375" y1="79.70025625" x2="52.245609375" y2="80.1513375" width="0.1524" layer="20"/>
+<wire x1="52.245609375" y1="80.1513375" x2="52.12420625" y2="90.430075" width="0.1524" layer="20"/>
 <wire x1="6.1031375" y1="90.47223125" x2="6.1031375" y2="86.87223125" width="0.1524" layer="20"/>
 <wire x1="6.1031375" y1="73.07223125" x2="6.1031375" y2="69.47223125" width="0.1524" layer="20"/>
-<wire x1="45.1031375" y1="97.47223125" x2="52.1031375" y2="90.47223125" width="0.1524" layer="20" curve="-90"/>
-<wire x1="52.1031375" y1="69.47223125" x2="45.1031375" y2="62.47223125" width="0.1524" layer="20" curve="-90"/>
+<wire x1="45.1031375" y1="97.47223125" x2="52.12420625" y2="90.430075" width="0.1524" layer="20" curve="-90"/>
+<wire x1="52.173528125" y1="69.43849375" x2="45.152459375" y2="62.48065" width="0.1524" layer="20" curve="-90"/>
 <wire x1="13.1031375" y1="97.47223125" x2="6.1031375" y2="90.47223125" width="0.1524" layer="20" curve="90"/>
 <wire x1="6.1031375" y1="69.47223125" x2="13.1031375" y2="62.47223125" width="0.1524" layer="20" curve="90"/>
 <wire x1="13.1031375" y1="86.87223125" x2="13.1031375" y2="73.07223125" width="0.1524" layer="20"/>
@@ -1757,6 +1763,7 @@ design rules under a new name.</description>
 <param name="checkWireStubs" value="1"/>
 <param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
+<param name="flattenRefDes" value="0"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
@@ -1856,144 +1863,144 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element uuid="0xABCDEF0B" name="ANT1" library="InkTime_v5" package="2450AT18B100E_ANTC3216X140N" value="2450AT18B100E_2450AT18B100E" x="46.811865625" y="78.19709375" smashed="yes">
-<attribute name="ARROW_PART_NUMBER" value="2450AT18B100E" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/2450at18b100e/johanson-dielectrics?utm_currency=USD&amp;region=nac" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="Antennas 2.45GHz ANTENNA" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="1.4mm" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="JOHANSON TECHNOLOGY" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="2450AT18B100E" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="609-2450AT18B100E" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Johanson-Technology/2450AT18B100E?qs=yCnrNFeXz%252Bh5MFsFIXGZGA%3D%3D" x="112.851865625" y="-95.79290625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="49.05975" y="80.705471875" size="0.4" layer="25" align="center"/>
-<attribute name="VALUE" x="68.401865625" y="76.92709375" size="1.27" layer="27" align="center"/>
+<element uuid="0xABCDEF0B" name="ANT1" library="InkTime_v5" package="2450AT18B100E_ANTC3216X140N" value="2450AT18B100E_2450AT18B100E" x="49.828575" y="78.307353125" smashed="yes">
+<attribute name="ARROW_PART_NUMBER" value="2450AT18B100E" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/2450at18b100e/johanson-dielectrics?utm_currency=USD&amp;region=nac" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="Antennas 2.45GHz ANTENNA" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.4mm" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="JOHANSON TECHNOLOGY" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="2450AT18B100E" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="609-2450AT18B100E" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Johanson-Technology/2450AT18B100E?qs=yCnrNFeXz%252Bh5MFsFIXGZGA%3D%3D" x="115.868575" y="-95.682646875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="52.076459375" y="80.81573125" size="0.4" layer="21" align="center"/>
+<attribute name="VALUE" x="71.418575" y="77.037353125" size="1.27" layer="27" align="center"/>
 </element>
 <element name="C1" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="12pF" x="38.9688625" y="81.943365625" smashed="yes">
-<attribute name="NAME" x="38.893825" y="82.6425875" size="0.4" layer="25"/>
+<attribute name="NAME" x="38.893825" y="82.6425875" size="0.4" layer="21"/>
 <attribute name="VALUE" x="36.9688625" y="79.943365625" size="1.27" layer="27"/>
 </element>
 <element name="C1-EP-DR" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="10uF" x="44.77485625" y="63.74301875" smashed="yes" rot="R271.4">
-<attribute name="NAME" x="43.465853125" y="65.623078125" size="0.4" layer="25" rot="R271.4"/>
+<attribute name="NAME" x="43.465853125" y="65.623078125" size="0.4" layer="21" rot="R271.4"/>
 <attribute name="VALUE" x="42.75101875" y="64.693853125" size="1.27" layer="27" rot="R271.4"/>
 </element>
 <element name="C10" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="N.C." x="34.23191875" y="84.446609375" smashed="yes">
-<attribute name="NAME" x="34.0021875" y="85.30501875" size="0.4" layer="25"/>
+<attribute name="NAME" x="34.0021875" y="85.30501875" size="0.4" layer="21"/>
 <attribute name="VALUE" x="32.23191875" y="82.446609375" size="1.27" layer="27"/>
 </element>
 <element name="C11" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="100pF" x="38.719034375" y="81.026571875" smashed="yes">
-<attribute name="NAME" x="37.250740625" y="81.18869375" size="0.4" layer="25"/>
+<attribute name="NAME" x="37.250740625" y="81.18869375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="36.719034375" y="79.026571875" size="1.27" layer="27"/>
 </element>
 <element name="C12" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="100nF" x="36.97663125" y="73.90278125" smashed="yes" rot="R270.9">
-<attribute name="NAME" x="36.942125" y="73.14134375" size="0.4" layer="25" rot="R270.9"/>
+<attribute name="NAME" x="36.942125" y="73.14134375" size="0.4" layer="21" rot="R270.9"/>
 <attribute name="VALUE" x="34.9454625" y="75.87111875" size="1.27" layer="27" rot="R270.9"/>
 </element>
 <element name="C13" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="N.C." x="35.1493125" y="83.336653125" smashed="yes">
-<attribute name="NAME" x="34.6954625" y="83.911178125" size="0.4" layer="25"/>
+<attribute name="NAME" x="34.6954625" y="83.911178125" size="0.4" layer="21"/>
 <attribute name="VALUE" x="33.1493125" y="81.336653125" size="1.27" layer="27"/>
 </element>
 <element name="C14" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="4.7uF" x="35.315103125" y="85.3065875" smashed="yes" rot="R88.9">
-<attribute name="NAME" x="36.3307875" y="84.86294375" size="0.4" layer="25" rot="R88.9"/>
+<attribute name="NAME" x="36.3307875" y="84.86294375" size="0.4" layer="21" rot="R88.9"/>
 <attribute name="VALUE" x="37.29553125" y="84.268378125" size="1.27" layer="27" rot="R88.9"/>
 </element>
 <element name="C15" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1.0uF" x="40.754709375" y="80.695140625" smashed="yes">
-<attribute name="NAME" x="40.37233125" y="81.31286875" size="0.4" layer="25"/>
+<attribute name="NAME" x="40.37233125" y="81.31286875" size="0.4" layer="21"/>
 <attribute name="VALUE" x="39.754709375" y="78.695140625" size="1.27" layer="27"/>
 </element>
 <element name="C16" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="47nF" x="32.55093125" y="82.5673375" smashed="yes">
-<attribute name="NAME" x="32.742184375" y="82.97799375" size="0.4" layer="25"/>
+<attribute name="NAME" x="32.742184375" y="82.97799375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="30.55093125" y="80.5673375" size="1.27" layer="27"/>
 </element>
 <element name="C17" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="12pF" x="28.23695625" y="81.85331875" smashed="yes" rot="R90">
-<attribute name="NAME" x="27.673340625" y="80.577075" size="0.4" layer="25" rot="R90"/>
+<attribute name="NAME" x="27.673340625" y="80.577075" size="0.4" layer="21" rot="R90"/>
 <attribute name="VALUE" x="30.23695625" y="79.85331875" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C18" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="12pF" x="31.047071875" y="82.978696875" smashed="yes">
-<attribute name="NAME" x="31.057521875" y="83.35730625" size="0.4" layer="25"/>
+<attribute name="NAME" x="31.057521875" y="83.35730625" size="0.4" layer="21"/>
 <attribute name="VALUE" x="29.047071875" y="80.978696875" size="1.27" layer="27"/>
 </element>
 <element name="C19" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="100nF" x="14.579934375" y="88.549971875" smashed="yes" rot="R183">
-<attribute name="NAME" x="13.428859375" y="88.033746875" size="0.4" layer="25" rot="R183"/>
+<attribute name="NAME" x="13.428859375" y="88.033746875" size="0.4" layer="21" rot="R183"/>
 <attribute name="VALUE" x="16.472515625" y="90.6518875" size="1.27" layer="27" rot="R183"/>
 </element>
 <element name="C2" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="12pF" x="35.14928125" y="87.10220625" smashed="yes" rot="R270.1">
-<attribute name="NAME" x="34.94758125" y="86.2249875" size="0.4" layer="25" rot="R270.1"/>
+<attribute name="NAME" x="34.94758125" y="86.2249875" size="0.4" layer="21" rot="R270.1"/>
 <attribute name="VALUE" x="33.145790625" y="89.0987125" size="1.27" layer="27" rot="R270.1"/>
 </element>
 <element name="C20" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="4.7uF" x="32.65898125" y="73.576221875" smashed="yes">
-<attribute name="NAME" x="32.725921875" y="72.49018125" size="0.4" layer="25"/>
+<attribute name="NAME" x="32.725921875" y="72.49018125" size="0.4" layer="21"/>
 <attribute name="VALUE" x="31.65898125" y="71.576221875" size="1.27" layer="27"/>
 </element>
 <element name="C21" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="4.7uF" x="30.07549375" y="73.738025" smashed="yes" rot="R181.4">
-<attribute name="NAME" x="28.91971875" y="73.88260625" size="0.4" layer="25" rot="R181.4"/>
+<attribute name="NAME" x="28.91971875" y="73.88260625" size="0.4" layer="21" rot="R181.4"/>
 <attribute name="VALUE" x="31.026325" y="75.761859375" size="1.27" layer="27" rot="R181.4"/>
 </element>
 <element name="C22" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="N.C." x="42.592225" y="76.2058" smashed="yes" rot="R268.8">
-<attribute name="NAME" x="41.5553" y="76.41004375" size="0.4" layer="25" rot="R268.8"/>
+<attribute name="NAME" x="41.5553" y="76.41004375" size="0.4" layer="21" rot="R268.8"/>
 <attribute name="VALUE" x="40.634546875" y="78.24724375" size="1.27" layer="27" rot="R268.8"/>
 </element>
 <element name="C23" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="0.1uF" x="12.282528125" y="95.118415625" smashed="yes" rot="R0.3">
-<attribute name="NAME" x="11.271259375" y="95.712203125" size="0.4" layer="25" rot="R0.3"/>
+<attribute name="NAME" x="11.271259375" y="95.712203125" size="0.4" layer="21" rot="R0.3"/>
 <attribute name="VALUE" x="10.293025" y="93.107965625" size="1.27" layer="27" rot="R0.3"/>
 </element>
 <element name="C24" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="10uF" x="9.93355" y="94.830734375" smashed="yes">
-<attribute name="NAME" x="9.610040625" y="95.58149375" size="0.4" layer="25"/>
+<attribute name="NAME" x="9.610040625" y="95.58149375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="8.93355" y="92.830734375" size="1.27" layer="27"/>
 </element>
 <element name="C25" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="22uF" x="16.84195625" y="94.014140625" smashed="yes">
-<attribute name="NAME" x="15.0366" y="94.631359375" size="0.4" layer="25"/>
+<attribute name="NAME" x="15.0366" y="94.631359375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="15.84195625" y="92.014140625" size="1.27" layer="27"/>
 </element>
 <element name="C3" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="1pF" x="39.8207" y="76.5138375" smashed="yes">
-<attribute name="NAME" x="39.028715625" y="75.530384375" size="0.4" layer="25"/>
+<attribute name="NAME" x="39.028715625" y="75.530384375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="37.8207" y="74.5138375" size="1.27" layer="27"/>
 </element>
 <element name="C33" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="22uF" x="17.606325" y="91.579634375" smashed="yes">
-<attribute name="NAME" x="18.877378125" y="91.123959375" size="0.4" layer="25"/>
+<attribute name="NAME" x="18.877378125" y="91.123959375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="16.606325" y="89.579634375" size="1.27" layer="27"/>
 </element>
 <element name="C37" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF" x="26.249065625" y="85.085446875" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.807821875" y="85.510659375" size="0.4" layer="25" rot="R90"/>
+<attribute name="NAME" x="25.807821875" y="85.510659375" size="0.4" layer="21" rot="R90"/>
 <attribute name="VALUE" x="28.24906875" y="84.08544375" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C38" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF" x="24.14169375" y="84.728290625" smashed="yes" rot="R1.1">
-<attribute name="NAME" x="23.79736875" y="82.862575" size="0.4" layer="25" rot="R1.1"/>
+<attribute name="NAME" x="23.79736875" y="82.862575" size="0.4" layer="21" rot="R1.1"/>
 <attribute name="VALUE" x="23.18026875" y="82.70945625" size="1.27" layer="27" rot="R1.1"/>
 </element>
 <element name="C39" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="10uF" x="16.034075" y="95.888584375" smashed="yes" rot="R270.1">
-<attribute name="NAME" x="17.22816875" y="96.655584375" size="0.4" layer="25" rot="R270.1"/>
+<attribute name="NAME" x="17.22816875" y="96.655584375" size="0.4" layer="21" rot="R270.1"/>
 <attribute name="VALUE" x="14.032328125" y="96.88509375" size="1.27" layer="27" rot="R270.1"/>
 </element>
 <element name="C4" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="1pF" x="41.200815625" y="76.494146875" smashed="yes" rot="R179.3">
-<attribute name="NAME" x="42.53125625" y="77.19689375" size="0.4" layer="25" rot="R179.3"/>
+<attribute name="NAME" x="42.53125625" y="77.19689375" size="0.4" layer="21" rot="R179.3"/>
 <attribute name="VALUE" x="43.2251" y="78.4695625" size="1.27" layer="27" rot="R179.3"/>
 </element>
 <element name="C42" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="0.1uF" x="27.67898125" y="88.25149375" smashed="yes" rot="R359.3">
-<attribute name="NAME" x="24.47366875" y="93.13961875" size="0.4" layer="25" rot="R359.3"/>
+<attribute name="NAME" x="24.47366875" y="93.13961875" size="0.4" layer="21" rot="R359.3"/>
 <attribute name="VALUE" x="25.65469375" y="86.276078125" size="1.27" layer="27" rot="R359.3"/>
 </element>
 <element name="C43" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="4.7uF" x="34.908396875" y="89.70849375" smashed="yes">
-<attribute name="NAME" x="33.99511875" y="88.47610625" size="0.4" layer="25"/>
+<attribute name="NAME" x="33.99511875" y="88.47610625" size="0.4" layer="21"/>
 <attribute name="VALUE" x="33.908396875" y="87.70849375" size="1.27" layer="27"/>
 </element>
 <element name="C5" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="100nF" x="29.1468625" y="83.148709375" smashed="yes" rot="R181.2">
-<attribute name="NAME" x="29.556471875" y="84.053" size="0.4" layer="25" rot="R181.2"/>
+<attribute name="NAME" x="29.556471875" y="84.053" size="0.4" layer="21" rot="R181.2"/>
 <attribute name="VALUE" x="31.0779375" y="86.459871875" size="1.27" layer="27" rot="R181.2"/>
 </element>
 <element name="C6" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="4.7uF" x="27.678340625" y="72.95103125" smashed="yes" rot="R269.5">
-<attribute name="NAME" x="28.380484375" y="73.4796375" size="0.4" layer="25" rot="R269.5"/>
+<attribute name="NAME" x="28.380484375" y="73.4796375" size="0.4" layer="21" rot="R269.5"/>
 <attribute name="VALUE" x="25.687140625" y="73.96844375" size="1.27" layer="27" rot="R269.5"/>
 </element>
 <element name="C7" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="100nF" x="15.678034375" y="90.093353125" smashed="yes" rot="R179.8">
-<attribute name="NAME" x="17.066634375" y="89.863071875" size="0.4" layer="25" rot="R179.8"/>
+<attribute name="NAME" x="17.066634375" y="89.863071875" size="0.4" layer="21" rot="R179.8"/>
 <attribute name="VALUE" x="17.685003125" y="92.086359375" size="1.27" layer="27" rot="R179.8"/>
 </element>
 <element name="C8" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="100nF" x="38.905084375" y="73.467421875" smashed="yes">
-<attribute name="NAME" x="38.6476125" y="72.4025125" size="0.4" layer="25"/>
+<attribute name="NAME" x="38.6476125" y="72.4025125" size="0.4" layer="21"/>
 <attribute name="VALUE" x="36.905084375" y="71.467421875" size="1.27" layer="27"/>
 </element>
 <element name="C9" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="820pF" x="38.48764375" y="78.417353125" smashed="yes">
-<attribute name="NAME" x="37.95108125" y="78.97119375" size="0.4" layer="25"/>
+<attribute name="NAME" x="37.95108125" y="78.97119375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="36.48764375" y="76.417353125" size="1.27" layer="27"/>
 </element>
 <element uuid="0xABCDEF0D" name="D2" library="InkTime_v5" package="ESP32_C6_LIBRARY_5_SOD3716X135N" value="ESP32_C6_LIBRARY_5_MBR0530" x="20.970890625" y="72.475528125" smashed="yes" rot="R181.1">
@@ -2002,7 +2009,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" Diode Schottky 30 V 500mA Surface Mount SOD-123 " x="-45.784428125" y="241.405125" size="1.778" layer="27" rot="R181.1" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="-45.784428125" y="241.405125" size="1.778" layer="27" rot="R181.1" display="off"/>
 <attribute name="MP" value="MBR0530" x="-45.784428125" y="241.405125" size="1.778" layer="27" rot="R181.1" display="off"/>
-<attribute name="NAME" x="24.14616875" y="72.20109375" size="0.4" layer="25" rot="R181.1" align="center"/>
+<attribute name="NAME" x="24.14616875" y="72.20109375" size="0.4" layer="21" rot="R181.1" align="center"/>
 <attribute name="PACKAGE" value="SOD-123-2 ON Semiconductor" x="-45.784428125" y="241.405125" size="1.778" layer="27" rot="R181.1" display="off"/>
 <attribute name="PRICE" value="None" x="-45.784428125" y="241.405125" size="1.778" layer="27" rot="R181.1" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=179458&amp;manufacturer=ON Semiconductor&amp;part_name=MBR0530&amp;search_term=None" x="-45.784428125" y="241.405125" size="1.778" layer="27" rot="R181.1" display="off"/>
@@ -2015,7 +2022,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" 17V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-6 " x="-139.0586375" y="53.733975" size="1.778" layer="27" rot="R271.5" display="off"/>
 <attribute name="MF" value="STMicroelectronics" x="-139.0586375" y="53.733975" size="1.778" layer="27" rot="R271.5" display="off"/>
 <attribute name="MP" value="USBLC6-2SC6Y" x="-139.0586375" y="53.733975" size="1.778" layer="27" rot="R271.5" display="off"/>
-<attribute name="NAME" x="32.535284375" y="88.96325625" size="0.4" layer="25" rot="R271.5" align="center"/>
+<attribute name="NAME" x="32.535284375" y="88.96325625" size="0.4" layer="21" rot="R271.5" align="center"/>
 <attribute name="PACKAGE" value="SOT-23-6 STMicroelectronics" x="-139.0586375" y="53.733975" size="1.778" layer="27" rot="R271.5" display="off"/>
 <attribute name="PRICE" value="None" x="-139.0586375" y="53.733975" size="1.778" layer="27" rot="R271.5" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=snap" x="-139.0586375" y="53.733975" size="1.778" layer="27" rot="R271.5" display="off"/>
@@ -2027,7 +2034,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" Diode Schottky 30 V 500mA Surface Mount SOD-123 " x="114.885396875" y="-99.62906875" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="114.885396875" y="-99.62906875" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="MBR0530" x="114.885396875" y="-99.62906875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.538065625" y="71.05643125" size="0.5" layer="25" align="center"/>
+<attribute name="NAME" x="17.538065625" y="71.05643125" size="0.5" layer="21" align="center"/>
 <attribute name="PACKAGE" value="SOD-123-2 ON Semiconductor" x="114.885396875" y="-99.62906875" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="None" x="114.885396875" y="-99.62906875" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=179458&amp;manufacturer=ON Semiconductor&amp;part_name=MBR0530&amp;search_term=None" x="114.885396875" y="-99.62906875" size="1.778" layer="27" display="off"/>
@@ -2040,7 +2047,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" Diode Schottky 30 V 500mA Surface Mount SOD-123 " x="193.9401875" y="202.452275" size="1.778" layer="27" rot="R89" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="193.9401875" y="202.452275" size="1.778" layer="27" rot="R89" display="off"/>
 <attribute name="MP" value="MBR0530" x="193.9401875" y="202.452275" size="1.778" layer="27" rot="R89" display="off"/>
-<attribute name="NAME" x="20.106015625" y="79.240915625" size="0.4" layer="25" rot="R89" align="center"/>
+<attribute name="NAME" x="20.106015625" y="79.240915625" size="0.4" layer="21" rot="R89" align="center"/>
 <attribute name="PACKAGE" value="SOD-123-2 ON Semiconductor" x="193.9401875" y="202.452275" size="1.778" layer="27" rot="R89" display="off"/>
 <attribute name="PRICE" value="None" x="193.9401875" y="202.452275" size="1.778" layer="27" rot="R89" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=179458&amp;manufacturer=ON Semiconductor&amp;part_name=MBR0530&amp;search_term=None" x="193.9401875" y="202.452275" size="1.778" layer="27" rot="R89" display="off"/>
@@ -2048,43 +2055,43 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="13.839990625" y="72.225621875" size="1.27" layer="27" rot="R89" align="center"/>
 </element>
 <element name="EPD_C1" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="19.57360625" y="83.562153125" smashed="yes" rot="R180.7">
-<attribute name="NAME" x="18.720028125" y="83.11296875" size="0.4" layer="25" rot="R180.7"/>
+<attribute name="NAME" x="18.720028125" y="83.11296875" size="0.4" layer="21" rot="R180.7"/>
 <attribute name="VALUE" x="20.549096875" y="85.57421875" size="1.27" layer="27" rot="R180.7"/>
 </element>
 <element name="EPD_C10" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="21.644953125" y="74.0338875" smashed="yes" rot="R179.4">
-<attribute name="NAME" x="25.262725" y="74.05423125" size="0.4" layer="25" rot="R179.4"/>
+<attribute name="NAME" x="25.262725" y="74.05423125" size="0.4" layer="21" rot="R179.4"/>
 <attribute name="VALUE" x="29.576040625" y="74.3648875" size="1.27" layer="27" rot="R179.4"/>
 </element>
 <element name="EPD_C11" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="19.21241875" y="74.313234375" smashed="yes" rot="R179.7">
-<attribute name="NAME" x="18.179140625" y="72.835390625" size="0.5" layer="25" rot="R179.7"/>
+<attribute name="NAME" x="18.179140625" y="72.835390625" size="0.5" layer="21" rot="R179.7"/>
 <attribute name="VALUE" x="18.827340625" y="69.4029125" size="1.27" layer="27" rot="R179.7"/>
 </element>
 <element name="EPD_C12" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="13.103984375" y="70.892503125" smashed="yes" rot="R180.4">
-<attribute name="NAME" x="14.827725" y="70.135378125" size="0.5" layer="25" rot="R180.4"/>
+<attribute name="NAME" x="14.827725" y="70.135378125" size="0.5" layer="21" rot="R180.4"/>
 <attribute name="VALUE" x="14.089996875" y="72.899434375" size="1.27" layer="27" rot="R180.4"/>
 </element>
 <element name="EPD_C2" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="19.468378125" y="84.532640625" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.3246125" y="84.32543125" size="0.4" layer="25" rot="R180"/>
+<attribute name="NAME" x="18.3246125" y="84.32543125" size="0.4" layer="21" rot="R180"/>
 <attribute name="VALUE" x="18.355128125" y="86.463534375" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="EPD_C5" library="InkTime_v5" package="NORDIC_NRF_3_RESC0201_L" value="0.1uF/50V" x="18.378571875" y="79.413975" smashed="yes" rot="R180.1">
-<attribute name="NAME" x="19.001503125" y="78.878846875" size="0.5" layer="25" rot="R180.1"/>
+<attribute name="NAME" x="19.001503125" y="78.878846875" size="0.5" layer="21" rot="R180.1"/>
 <attribute name="VALUE" x="20.375078125" y="81.4174625" size="1.27" layer="27" rot="R180.1"/>
 </element>
 <element name="EPD_C6" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="19.51273125" y="77.89379375" smashed="yes" rot="R179.6">
-<attribute name="NAME" x="18.044109375" y="77.7446625" size="0.4" layer="25" rot="R179.6"/>
+<attribute name="NAME" x="18.044109375" y="77.7446625" size="0.4" layer="21" rot="R179.6"/>
 <attribute name="VALUE" x="28.45071875" y="86.627253125" size="1.27" layer="27" rot="R179.6"/>
 </element>
 <element name="EPD_C7" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="19.307378125" y="76.723671875" smashed="yes" rot="R180.1">
-<attribute name="NAME" x="17.94799375" y="76.85033125" size="0.4" layer="25" rot="R180.1"/>
+<attribute name="NAME" x="17.94799375" y="76.85033125" size="0.4" layer="21" rot="R180.1"/>
 <attribute name="VALUE" x="26.33655" y="73.29471875" size="1.27" layer="27" rot="R180.1"/>
 </element>
 <element name="EPD_C8" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="21.645478125" y="77.102425" smashed="yes" rot="R270.3">
-<attribute name="NAME" x="20.730346875" y="78.02155625" size="0.4" layer="25" rot="R270.3"/>
+<attribute name="NAME" x="20.730346875" y="78.02155625" size="0.4" layer="21" rot="R270.3"/>
 <attribute name="VALUE" x="23.7949" y="82.1711" size="1.27" layer="27" rot="R270.3"/>
 </element>
 <element name="EPD_C9" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="1uF/50V" x="22.054665625" y="75.213925" smashed="yes" rot="R179.5">
-<attribute name="NAME" x="20.75558125" y="75.518709375" size="0.4" layer="25" rot="R179.5"/>
+<attribute name="NAME" x="20.75558125" y="75.518709375" size="0.4" layer="21" rot="R179.5"/>
 <attribute name="VALUE" x="20.234803125" y="69.36078125" size="1.27" layer="27" rot="R179.5"/>
 </element>
 <element uuid="0xABCDEF35" name="IC1" library="InkTime_v5" package="BQ25180YBGR_BGA8C40P2X4_100X155X50" value="BQ25180YBGR_BQ25180YBGR" x="25.70434375" y="82.521925" smashed="yes" rot="R90.1">
@@ -2096,7 +2103,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BQ25180YBGR" x="190.5846375" y="208.539878125" size="1.778" layer="27" rot="R90.1" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="595-BQ25180YBGR" x="190.5846375" y="208.539878125" size="1.778" layer="27" rot="R90.1" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ25180YBGR?qs=doiCPypUmgEWjAK%252BJAX6Tw%3D%3D" x="190.5846375" y="208.539878125" size="1.778" layer="27" rot="R90.1" display="off"/>
-<attribute name="NAME" x="27.13865625" y="83.538225" size="0.3" layer="25" rot="R177.4" align="center"/>
+<attribute name="NAME" x="27.13865625" y="83.538225" size="0.3" layer="21" rot="R177.4" align="center"/>
 <attribute name="VALUE" x="2.8332875" y="88.83201875" size="1.27" layer="27" rot="R90.1" align="center"/>
 </element>
 <element uuid="0xABCDEF05" name="IC3" library="InkTime_v5" package="BMA423_BMA423" value="BMA423_BMA423" x="28.73510625" y="78.59431875" smashed="yes" rot="R1.4">
@@ -2108,7 +2115,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BMA423" x="94.856165625" y="-79.857490625" size="1.778" layer="27" rot="R1.4" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="262-BMA423" x="94.856165625" y="-79.857490625" size="1.778" layer="27" rot="R1.4" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMA423?qs=HXFqYaX1Q2xC%252BSgeGoX3mg%3D%3D" x="94.856165625" y="-79.857490625" size="1.778" layer="27" rot="R1.4" display="off"/>
-<attribute name="NAME" x="28.054953125" y="76.7324375" size="0.4" layer="25" rot="R1.4" align="center"/>
+<attribute name="NAME" x="28.054953125" y="76.7324375" size="0.4" layer="21" rot="R1.4" align="center"/>
 <attribute name="VALUE" x="28.865340625" y="73.265896875" size="1.27" layer="27" rot="R1.4" align="center"/>
 </element>
 <element uuid="0xABCDEF15" name="IC2" library="InkTime_v5" package="DRV2605YZFR_BGA9C50P3X3_144X144X62" value="DRV2605YZFR_DRV2605YZFR" x="48.05685625" y="70.5902375" smashed="yes">
@@ -2118,7 +2125,7 @@ design rules under a new name.</description>
 <attribute name="HEIGHT" value="0.625mm" x="98.85685625" y="-69.1097625" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="98.85685625" y="-69.1097625" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DRV2605YZFR" x="98.85685625" y="-69.1097625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="47.02248125" y="72.152396875" size="0.5" layer="25" align="center"/>
+<attribute name="NAME" x="47.02248125" y="72.152396875" size="0.5" layer="21" align="center"/>
 <attribute name="VALUE" x="63.29685625" y="66.7802375" size="1.27" layer="27" align="center"/>
 </element>
 <element uuid="0xABCDEF1D" name="IC9" library="InkTime_v5" package="RT6160AWSC_BGA15C40P3X5_140X230X60" value="RT6160AWSC_RT6160AWSC" x="12.7272625" y="92.710009375" smashed="yes">
@@ -2130,7 +2137,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="RT6160AWSC" x="106.7072625" y="-72.389990625" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="835-RT6160AWSC" x="106.7072625" y="-72.389990625" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Richtek/RT6160AWSC?qs=amGC7iS6iy%2FLd9PSoixZXQ%3D%3D" x="106.7072625" y="-72.389990625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="11.196925" y="91.20715" size="0.4" layer="25" align="center"/>
+<attribute name="NAME" x="11.196925" y="91.20715" size="0.4" layer="21" align="center"/>
 <attribute name="VALUE" x="11.4572625" y="142.240009375" size="1.27" layer="27" align="center"/>
 </element>
 <element uuid="0xABCDEF17" name="J1" library="InkTime_v5" package="503480-2400_5034802400" value="503480-2400_503480-2400" x="14.974459375" y="80.019528125" smashed="yes" rot="R269.4">
@@ -2140,7 +2147,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="503480-2400" x="-126.253790625" y="56.097125" size="1.778" layer="27" rot="R269.4" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="538-503480-2400" x="-126.253790625" y="56.097125" size="1.778" layer="27" rot="R269.4" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/503480-2400?qs=OAhjpuo3Vu7efIoxFh9AOw%3D%3D" x="-126.253790625" y="56.097125" size="1.778" layer="27" rot="R269.4" display="off"/>
-<attribute name="NAME" x="14.845171875" y="82.024684375" size="0.5" layer="25" rot="R269.4" align="center"/>
+<attribute name="NAME" x="14.845171875" y="82.024684375" size="0.5" layer="21" rot="R269.4" align="center"/>
 <attribute name="VALUE" x="-11.100178125" y="76.108215625" size="1.27" layer="27" rot="R269.4" align="center"/>
 </element>
 <element uuid="0xABCDEF10" name="J2" library="InkTime_v5" package="TC2030-IDC_TC2030IDC" value="TC2030-IDC_TC2030-IDC" x="45.26551875" y="88.688275" smashed="yes" rot="R181.9">
@@ -2152,7 +2159,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="TC2030-IDC" x="15.50034375" y="219.853509375" size="1.778" layer="27" rot="R181.9" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="" x="15.50034375" y="219.853509375" size="1.778" layer="27" rot="R181.9" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="15.50034375" y="219.853509375" size="1.778" layer="27" rot="R181.9" display="off"/>
-<attribute name="NAME" x="49.798565625" y="91.004515625" size="0.5" layer="25" rot="R181.9" align="center"/>
+<attribute name="NAME" x="49.798565625" y="91.004515625" size="0.5" layer="21" rot="R181.9" align="center"/>
 <attribute name="VALUE" x="49.692184375" y="101.277453125" size="1.27" layer="27" rot="R181.9" align="center"/>
 </element>
 <element uuid="0xABCDEF0A" name="J4" library="InkTime_v5" package="KH-TYPE-C-16P_KINGHELM_KH-TYPE-C-16P" value="KH-TYPE-C-16P_KH-TYPE-C-16P" x="30.962325" y="96.365234375" smashed="yes" rot="R180.4">
@@ -2161,26 +2168,26 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value="                                                                                                    " x="-89.026528125" y="183.159671875" size="1.778" layer="27" rot="R180.4" display="off"/>
 <attribute name="MF" value="kinghelm" x="-89.026528125" y="183.159671875" size="1.778" layer="27" rot="R180.4" display="off"/>
 <attribute name="MP" value="KH-TYPE-C-16P" x="-89.026528125" y="183.159671875" size="1.778" layer="27" rot="R180.4" display="off"/>
-<attribute name="NAME" x="25.3548125" y="96.395534375" size="0.4" layer="25" rot="R180.4"/>
+<attribute name="NAME" x="25.3548125" y="96.395534375" size="0.4" layer="21" rot="R180.4"/>
 <attribute name="PACKAGE" value="None" x="-89.026528125" y="183.159671875" size="1.778" layer="27" rot="R180.4" display="off"/>
 <attribute name="PRICE" value="None" x="-89.026528125" y="183.159671875" size="1.778" layer="27" rot="R180.4" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/KH-TYPE-C-16P/Kinghelm/view-part/?ref=snap" x="-89.026528125" y="183.159671875" size="1.778" layer="27" rot="R180.4" display="off"/>
 <attribute name="VALUE" x="49.384865625" y="107.810978125" size="1.27" layer="27" rot="R180.4"/>
 </element>
 <element name="L1" library="InkTime_v5" package="NORDIC_NRF_2_RESC0402_L" value="3.9nH" x="40.052334375" y="79.569784375" smashed="yes">
-<attribute name="NAME" x="40.02381875" y="78.572859375" size="0.4" layer="25"/>
+<attribute name="NAME" x="40.02381875" y="78.572859375" size="0.4" layer="21"/>
 <attribute name="VALUE" x="39.052334375" y="77.569784375" size="1.27" layer="27"/>
 </element>
 <element name="L2" library="InkTime_v5" package="NORDIC_NRF_2_RESC0402_L" value="10uH" x="32.790559375" y="87.397821875" smashed="yes">
-<attribute name="NAME" x="33.78906875" y="87.510875" size="0.4" layer="25"/>
+<attribute name="NAME" x="33.78906875" y="87.510875" size="0.4" layer="21"/>
 <attribute name="VALUE" x="31.790559375" y="85.397821875" size="1.27" layer="27"/>
 </element>
 <element name="L3" library="InkTime_v5" package="NORDIC_NRF_2_RESC0402_L" value="15uH" x="33.07424375" y="85.55483125" smashed="yes" rot="R269.7">
-<attribute name="NAME" x="33.73136875" y="85.97729375" size="0.4" layer="25" rot="R269.7"/>
+<attribute name="NAME" x="33.73136875" y="85.97729375" size="0.4" layer="21" rot="R269.7"/>
 <attribute name="VALUE" x="31.07950625" y="86.5652875" size="1.27" layer="27" rot="R269.7"/>
 </element>
 <element name="L5" library="InkTime_v5" package="NORDIC_NRF_2_RESC0402_L" value="68uH" x="19.39498125" y="81.57669375" smashed="yes">
-<attribute name="NAME" x="19.223890625" y="82.3688625" size="0.4" layer="25"/>
+<attribute name="NAME" x="19.223890625" y="82.3688625" size="0.4" layer="21"/>
 <attribute name="VALUE" x="18.39498125" y="79.57669375" size="1.27" layer="27"/>
 </element>
 <element uuid="0xABCDEF02" name="L7" library="InkTime_v5" package="MLP2016SR47MT0S1_INDC2016X100N" value="MLP2016SR47MT0S1_FTC252012SR47MBCA" x="7.889478125" y="89.780140625" smashed="yes" rot="R268.7">
@@ -2192,11 +2199,11 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER_NAME" value="TDK" x="-124.26986875" y="31.803559375" size="1.778" layer="27" rot="R268.7" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="FTC252012SR47MBCA" x="-124.26986875" y="31.803559375" size="1.778" layer="27" rot="R268.7" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" x="-124.26986875" y="31.803559375" size="1.778" layer="27" rot="R268.7" display="off"/>
-<attribute name="NAME" x="9.5671125" y="89.798134375" size="0.5" layer="25" rot="R268.7" align="center"/>
+<attribute name="NAME" x="9.5671125" y="89.798134375" size="0.5" layer="21" rot="R268.7" align="center"/>
 <attribute name="VALUE" x="11.69849375" y="89.693696875" size="1.27" layer="27" rot="R268.7" align="center"/>
 </element>
 <element uuid="0xABCDEF09" name="Q1" library="InkTime_v5" package="ESP32_C6_LIBRARY_4_ESP32_C6_LIBRARY_4_ESP32_C6_LIBRARY_4_ESP32_C6_LIBRARY_4_ESP32_WROVER_SPARKFUN-DISCRETESEMI_SOT23-3" value="20V/4.2A/52mΩ/1.4W" x="46.31921875" y="66.190959375" smashed="yes" rot="R90">
-<attribute name="NAME" x="46.66555625" y="64.29635625" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="46.66555625" y="64.29635625" size="0.6096" layer="21" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="TRAN-14388" x="178.39921875" y="104.290959375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="46.31921875" y="67.841959375" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
@@ -2206,7 +2213,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" Si1308EDL-T1-GE3 N-channel MOSFET Transistor, 1.5 A, 30 V, 3-Pin SC-70 | Siliconix / Vishay SI1308EDL-T1-GE3 " x="51.054634375" y="-86.821625" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Vishay Siliconix" x="51.054634375" y="-86.821625" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="SI1308EDL-T1-GE3" x="51.054634375" y="-86.821625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.005896875" y="87.613725" size="0.4" layer="25" align="center"/>
+<attribute name="NAME" x="17.005896875" y="87.613725" size="0.4" layer="21" align="center"/>
 <attribute name="PACKAGE" value="SOT-323 Vishay Semiconductor" x="51.054634375" y="-86.821625" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="None" x="51.054634375" y="-86.821625" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=274603&amp;manufacturer=Vishay Siliconix&amp;part_name=SI1308EDL-T1-GE3&amp;search_term=None" x="51.054634375" y="-86.821625" size="1.778" layer="27" display="off"/>
@@ -2244,7 +2251,7 @@ design rules under a new name.</description>
 <element name="R_TYPE_SEL" library="InkTime_v5" package="ERA-1AEB3401C_0201" value="2.2" x="26.335721875" y="66.284034375" smashed="yes">
 </element>
 <element name="SJ1" library="InkTime_v5" package="ESP32_C6_LIBRARY_7_JUMPER_SJ" value="" x="24.21208125" y="64.17991875" smashed="yes">
-<attribute name="NAME" x="22.080159375" y="65.545728125" size="0.7" layer="25" ratio="10"/>
+<attribute name="NAME" x="22.080159375" y="65.545728125" size="0.7" layer="21" ratio="10"/>
 <attribute name="POPULARITY" value="3" x="133.43208125" y="-100.92008125" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="24.61218125" y="64.17991875" size="0.02" layer="27"/>
 </element>
@@ -2279,91 +2286,91 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.90788125" y="60.8473875" size="1.27" layer="27" ratio="6" rot="R180.3"/>
 </element>
 <element name="TP_3.3V" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="41.44590625" y="73.26770625" smashed="yes">
-<attribute name="NAME" x="41.957590625" y="74.487840625" size="0.4" layer="25"/>
+<attribute name="NAME" x="41.957590625" y="74.487840625" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="79.54590625" y="-91.83229375" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="41.44590625" y="70.72770625" size="1" layer="37"/>
 <attribute name="VALUE" x="40.68390625" y="72.25170625" size="0.0254" layer="27"/>
 </element>
 <element name="TP_3V3" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="45.75653125" y="95.733859375" smashed="yes">
-<attribute name="NAME" x="46.79929375" y="94.60053125" size="0.5" layer="25"/>
+<attribute name="NAME" x="46.79929375" y="94.60053125" size="0.5" layer="21"/>
 <attribute name="POPULARITY" value="2" x="109.25653125" y="-69.366140625" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="45.75653125" y="93.193859375" size="1" layer="37"/>
 <attribute name="VALUE" x="44.99453125" y="94.717859375" size="0.0254" layer="27"/>
 </element>
 <element name="TP_BAT_GND" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="41.170165625" y="94.109028125" smashed="yes">
-<attribute name="NAME" x="36.98328125" y="92.777684375" size="0.5" layer="25"/>
+<attribute name="NAME" x="36.98328125" y="92.777684375" size="0.5" layer="21"/>
 <attribute name="POPULARITY" value="2" x="123.720165625" y="-64.640971875" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="41.170165625" y="91.569028125" size="1" layer="37"/>
 <attribute name="VALUE" x="40.408165625" y="93.093028125" size="0.0254" layer="27"/>
 </element>
 <element name="TP_GND" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="38.179990625" y="95.542071875" smashed="yes">
-<attribute name="NAME" x="39.99095625" y="95.90105625" size="0.6" layer="25"/>
+<attribute name="NAME" x="39.99095625" y="95.90105625" size="0.6" layer="21"/>
 <attribute name="POPULARITY" value="2" x="67.389990625" y="-69.557928125" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="38.179990625" y="93.002071875" size="1" layer="37"/>
 <attribute name="VALUE" x="37.417990625" y="94.526071875" size="0.0254" layer="27"/>
 </element>
 <element name="TP_ON" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="50.794953125" y="69.98265" smashed="yes">
-<attribute name="NAME" x="50.208765625" y="68.20428125" size="0.4" layer="25"/>
+<attribute name="NAME" x="50.208765625" y="68.20428125" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="121.914953125" y="-95.11735" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="50.794953125" y="67.44265" size="1" layer="37"/>
 <attribute name="VALUE" x="50.032953125" y="68.96665" size="0.0254" layer="27"/>
 </element>
 <element name="TP_OP" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="50.599390625" y="73.04118125" smashed="yes">
-<attribute name="NAME" x="47.754734375" y="73.71015625" size="0.4" layer="25"/>
+<attribute name="NAME" x="47.754734375" y="73.71015625" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="129.339390625" y="-92.05881875" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="50.599390625" y="70.50118125" size="1" layer="37"/>
 <attribute name="VALUE" x="49.837390625" y="72.02518125" size="0.0254" layer="27"/>
 </element>
 <element name="TP_RESET" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="42.465596875" y="82.861896875" smashed="yes">
-<attribute name="NAME" x="39.884934375" y="84.3150125" size="0.8" layer="25"/>
+<attribute name="NAME" x="39.884934375" y="84.3150125" size="0.8" layer="21"/>
 <attribute name="POPULARITY" value="2" x="160.575596875" y="-75.888103125" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="42.465596875" y="80.321896875" size="1" layer="37"/>
 <attribute name="VALUE" x="41.703596875" y="81.845896875" size="0.0254" layer="27"/>
 </element>
 <element name="TP_SCL" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="23.521715625" y="87.461928125" smashed="yes">
-<attribute name="NAME" x="20.54294375" y="88.14189375" size="0.4" layer="25"/>
+<attribute name="NAME" x="20.54294375" y="88.14189375" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="79.401715625" y="-77.638071875" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="23.521715625" y="84.921928125" size="1" layer="37"/>
 <attribute name="VALUE" x="22.759715625" y="86.445928125" size="0.0254" layer="27"/>
 </element>
 <element name="TP_SDA" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="21.5685125" y="95.8373125" smashed="yes" rot="R188.4">
-<attribute name="NAME" x="20.6102" y="96.825325" size="0.5" layer="25" rot="R188.4"/>
+<attribute name="NAME" x="20.6102" y="96.825325" size="0.5" layer="21" rot="R188.4"/>
 <attribute name="POPULARITY" value="2" x="-49.0357" y="252.301728125" size="1.778" layer="27" rot="R188.4" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="21.197459375" y="98.3500625" size="1" layer="37" rot="R188.4"/>
 <attribute name="VALUE" x="22.173915625" y="96.953725" size="0.0254" layer="27" rot="R188.4"/>
 </element>
 <element name="TP_SWDCLK" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="49.601453125" y="75.3554625" smashed="yes">
-<attribute name="NAME" x="44.63286875" y="74.426271875" size="0.4" layer="25"/>
+<attribute name="NAME" x="44.63286875" y="74.426271875" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="144.851453125" y="-83.3945375" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="49.601453125" y="72.8154625" size="1" layer="37"/>
 <attribute name="VALUE" x="48.839453125" y="74.3394625" size="0.0254" layer="27"/>
 </element>
 <element name="TP_SWDIO" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="50.481140625" y="82.698221875" smashed="yes">
-<attribute name="NAME" x="50.807009375" y="84.296646875" size="0.8" layer="25" rot="R90"/>
+<attribute name="NAME" x="50.807009375" y="84.296646875" size="0.8" layer="21" rot="R90"/>
 <attribute name="POPULARITY" value="2" x="157.161140625" y="-76.051778125" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="50.481140625" y="80.158221875" size="1" layer="37"/>
 <attribute name="VALUE" x="49.719140625" y="81.682221875" size="0.0254" layer="27"/>
 </element>
 <element name="TP_SWO" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="35.5452375" y="72.83714375" smashed="yes">
-<attribute name="NAME" x="34.960953125" y="71.30380625" size="0.4" layer="25"/>
+<attribute name="NAME" x="34.960953125" y="71.30380625" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="55.8652375" y="-92.26285625" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="35.5452375" y="70.29714375" size="1" layer="37"/>
 <attribute name="VALUE" x="34.7832375" y="71.82114375" size="0.0254" layer="27"/>
 </element>
 <element name="TP_VBAT" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="39.968890625" y="69.88278125" smashed="yes">
-<attribute name="NAME" x="40.850953125" y="70.66534375" size="0.4" layer="25"/>
+<attribute name="NAME" x="40.850953125" y="70.66534375" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="178.398890625" y="-88.86721875" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="39.968890625" y="67.34278125" size="1" layer="37"/>
 <attribute name="VALUE" x="39.206890625" y="68.86678125" size="0.0254" layer="27"/>
 </element>
 <element name="TP_VREG" library="InkTime_v5" package="HECTOR_WATCH_1_TP20R" value="HECTOR_WATCH_1_TPTP20R" x="25.5775875" y="89.31910625" smashed="yes">
-<attribute name="NAME" x="22.834296875" y="90.8092875" size="0.4" layer="25"/>
+<attribute name="NAME" x="22.834296875" y="90.8092875" size="0.4" layer="21"/>
 <attribute name="POPULARITY" value="2" x="153.8475875" y="-69.43089375" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="25.5775875" y="86.77910625" size="1" layer="37"/>
 <attribute name="VALUE" x="24.8155875" y="88.30310625" size="0.0254" layer="27"/>
 </element>
 <element name="C2-EP-DR" library="InkTime_v5" package="NORDIC_NRF_3_RESC0402_L" value="4.7uF/25V" x="21.166634375" y="86.071784375" smashed="yes" rot="R179.9">
-<attribute name="NAME" x="21.739446875" y="87.057528125" size="0.4" layer="25" rot="R179.9"/>
+<attribute name="NAME" x="21.739446875" y="87.057528125" size="0.4" layer="21" rot="R179.9"/>
 <attribute name="VALUE" x="22.170121875" y="88.070034375" size="1.27" layer="27" rot="R179.9"/>
 </element>
 <element uuid="0xABCDEF1F" name="U1" library="InkTime_v5" package="NORDIC_NRF_4_AQFN50P700X700X85_HS-74N" value="NRF52840_QF" x="34.109521875" y="78.711246875" smashed="yes" rot="R0.3">
@@ -2376,7 +2383,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" 3µA 1-Cell/2-Cell Fuel Gauge with ModelGauge " x="163.35225" y="-62.330071875" size="1.778" layer="27" rot="R359.4" display="off"/>
 <attribute name="MF" value="Analog Devices" x="163.35225" y="-62.330071875" size="1.778" layer="27" rot="R359.4" display="off"/>
 <attribute name="MP" value="MAX17048G+T10" x="163.35225" y="-62.330071875" size="1.778" layer="27" rot="R359.4" display="off"/>
-<attribute name="NAME" x="44.363259375" y="71.208196875" size="0.4" layer="25" rot="R359.4"/>
+<attribute name="NAME" x="44.363259375" y="71.208196875" size="0.4" layer="21" rot="R359.4"/>
 <attribute name="PACKAGE" value="TDFN-8 Maxim" x="163.35225" y="-62.330071875" size="1.778" layer="27" rot="R359.4" display="off"/>
 <attribute name="PRICE" value="None" x="163.35225" y="-62.330071875" size="1.778" layer="27" rot="R359.4" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=329239&amp;manufacturer=Analog Devices&amp;part_name=MAX17048G+T10&amp;search_term=None" x="163.35225" y="-62.330071875" size="1.778" layer="27" rot="R359.4" display="off"/>
@@ -2384,7 +2391,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="-13.689121875" y="62.608715625" size="1.27" layer="27" rot="R359.4" align="top-left"/>
 </element>
 <element uuid="0xABCDEF37" name="X1" library="InkTime_v5" package="NORDIC_NRF_BT-XTAL_2016_N" value="32MHz" x="37.51935625" y="89.273346875" smashed="yes" rot="R179.6">
-<attribute name="NAME" x="38.654909375" y="91.365875" size="0.4" layer="25" rot="R179.6"/>
+<attribute name="NAME" x="38.654909375" y="91.365875" size="0.4" layer="21" rot="R179.6"/>
 <attribute name="VALUE" x="40.23953125" y="92.154425" size="1.27" layer="27" rot="R179.6"/>
 </element>
 <element uuid="0xABCDEF1D" name="X2" library="InkTime_v5" package="NORDIC_NRF_1_XTAL_3215_N" value="32.768kHz" x="29.861415625" y="84.9982125" smashed="yes">
@@ -3450,15 +3457,22 @@ design rules under a new name.</description>
 <contactref element="U1" pad="P$AA24"/>
 <contactref element="J2" pad="4"/>
 <contactref element="TP_SWDCLK" pad="TP"/>
-<wire x1="44.96974375" y1="88.0431125" x2="44.96974375" y2="87.77948125" width="0.1524" layer="1"/>
-<wire x1="49.601453125" y1="78.969875" x2="49.601453125" y2="75.3554625" width="0.1524" layer="1"/>
-<wire x1="49.601453125" y1="75.3554625" x2="49.5429875" y2="75.413928125" width="0.1524" layer="1"/>
-<wire x1="49.5429875" y1="75.413928125" x2="39.67845" y2="75.413928125" width="0.1524" layer="1"/>
+<wire x1="47.65093125" y1="75.413928125" x2="39.67845" y2="75.413928125" width="0.1524" layer="1"/>
 <wire x1="39.67845" y1="75.413928125" x2="38.614084375" y2="76.47829375" width="0.1524" layer="1"/>
 <wire x1="38.614084375" y1="76.47829375" x2="37.37125625" y2="76.47829375" width="0.1524" layer="1"/>
-<wire x1="44.96974375" y1="87.77948125" x2="45.9650125" y2="86.7842125" width="0.1524" layer="1"/>
-<wire x1="45.9650125" y1="86.7842125" x2="45.9650125" y2="82.606315625" width="0.1524" layer="1"/>
-<wire x1="45.9650125" y1="82.606315625" x2="49.601453125" y2="78.969875" width="0.1524" layer="1"/>
+<via x="44.498875" y="77.58635" extent="1-16" drill="0.35" alwaysstop="yes">
+</via>
+<via x="46.936478125" y="76.12838125" extent="1-16" drill="0.35" alwaysstop="yes">
+</via>
+<wire x1="46.936478125" y1="76.223578125" x2="45.57370625" y2="77.58635" width="0.1524" layer="16"/>
+<wire x1="44.498875" y1="77.58635" x2="45.57370625" y2="77.58635" width="0.1524" layer="16"/>
+<wire x1="46.936478125" y1="76.223578125" x2="46.936478125" y2="76.12838125" width="0.1524" layer="16"/>
+<wire x1="46.936478125" y1="76.12838125" x2="47.65093125" y2="75.413928125" width="0.1524" layer="1"/>
+<wire x1="44.96974375" y1="88.0431125" x2="45.83905" y2="87.17380625" width="0.1524" layer="1"/>
+<wire x1="45.83905" y1="87.17380625" x2="45.83905" y2="78.926525" width="0.1524" layer="1"/>
+<wire x1="45.83905" y1="78.926525" x2="44.498875" y2="77.58635" width="0.1524" layer="1"/>
+<wire x1="46.936478125" y1="76.12838125" x2="48.828534375" y2="76.12838125" width="0.1524" layer="1"/>
+<wire x1="48.828534375" y1="76.12838125" x2="49.601453125" y2="75.3554625" width="0.1524" layer="1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="U1" pad="P$AC24"/>
@@ -3470,14 +3484,14 @@ design rules under a new name.</description>
 <wire x1="46.2698125" y1="87.373415625" x2="46.239046875" y2="87.40418125" width="0.1524" layer="1"/>
 <wire x1="48.2576875" y1="84.921675" x2="47.032325" y2="84.921675" width="0.1524" layer="1"/>
 <wire x1="46.2698125" y1="85.6841875" x2="46.2698125" y2="87.373415625" width="0.1524" layer="1"/>
-<via x="51.01856875" y="76.9680625" extent="1-16" drill="0.35" alwaysstop="yes">
+<via x="47.03245" y="81.09924375" extent="1-16" drill="0.35" alwaysstop="yes">
 </via>
-<wire x1="50.481140625" y1="82.698221875" x2="51.01856875" y2="82.16079375" width="0.1524" layer="1"/>
-<wire x1="51.01856875" y1="82.16079375" x2="51.01856875" y2="76.9680625" width="0.1524" layer="1"/>
+<wire x1="50.481140625" y1="82.698221875" x2="48.8821625" y2="81.09924375" width="0.1524" layer="1"/>
+<wire x1="48.8821625" y1="81.09924375" x2="47.03245" y2="81.09924375" width="0.1524" layer="1"/>
 <via x="38.70238125" y="75.0698375" extent="1-16" drill="0.2" alwaysstop="yes">
 </via>
-<wire x1="51.01856875" y1="76.9680625" x2="49.12034375" y2="75.0698375" width="0.1524" layer="16"/>
-<wire x1="49.12034375" y1="75.0698375" x2="38.70238125" y2="75.0698375" width="0.1524" layer="16"/>
+<wire x1="47.03245" y1="81.09924375" x2="41.00304375" y2="75.0698375" width="0.1524" layer="16"/>
+<wire x1="41.00304375" y1="75.0698375" x2="38.70238125" y2="75.0698375" width="0.1524" layer="16"/>
 <wire x1="37.373875" y1="75.9783" x2="37.79391875" y2="75.9783" width="0.1524" layer="1"/>
 <wire x1="37.79391875" y1="75.9783" x2="38.70238125" y2="75.0698375" width="0.1524" layer="1"/>
 </signal>
@@ -3535,8 +3549,9 @@ design rules under a new name.</description>
 <wire x1="41.45579375" y1="76.49103125" x2="41.486303125" y2="76.460521875" width="0.1524" layer="1"/>
 <wire x1="40.552334375" y1="79.569784375" x2="41.45579375" y2="78.666325" width="0.1524" layer="1"/>
 <wire x1="41.45579375" y1="78.666325" x2="41.45579375" y2="76.49103125" width="0.1524" layer="1"/>
-<wire x1="42.5975625" y1="76.46074375" x2="43.575515625" y2="76.46074375" width="0.1524" layer="1"/>
-<wire x1="43.575515625" y1="76.46074375" x2="45.311865625" y2="78.19709375" width="0.1524" layer="1"/>
+<wire x1="42.5975625" y1="76.46074375" x2="44.27406875" y2="76.46074375" width="0.1524" layer="1"/>
+<wire x1="46.120678125" y1="78.307353125" x2="48.328575" y2="78.307353125" width="0.1524" layer="1"/>
+<wire x1="46.120678125" y1="78.307353125" x2="44.27406875" y2="76.46074375" width="0.1524" layer="1"/>
 </signal>
 <signal name="DEC3">
 <contactref element="U1" pad="P$D23"/>
@@ -4036,8 +4051,6 @@ design rules under a new name.</description>
 <approved hash="19,1,4b9eda9dbce37200"/>
 <approved hash="19,1,22831ffc5f6e0384"/>
 <approved hash="19,1,14e408a744fab880"/>
-<approved hash="5,1,e698f4033f6b2d67"/>
-<approved hash="5,1,b5dd67adba1e136b"/>
 </errors>
 </board>
 </drawing>
